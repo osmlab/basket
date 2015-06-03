@@ -4,7 +4,7 @@ title: "(GMU) Volcano Mapping in Indonesia"
 excerpt: "Using OSM to mitigate the impact of volcanic eruptions."
 categories: articles
 tags: [indonesia, volcano, GMU, USAID]
-author: USAID/OFDA
+author: USAID_OFDA
 comments: true
 share: true
 ads: false
