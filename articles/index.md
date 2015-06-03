@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Sample Articles
-excerpt: "An archive of articles sorted by date."
+title: OpenStreetMap in Action
+excerpt: "For holding stories about how OSM is used in the wild."
 search_omit: true
 ---
 
