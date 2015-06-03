@@ -11,6 +11,7 @@ url: //cmdrkerfy.github.io/basket
 permalink:   /:categories/:title/
 markdown:    kramdown
 highlighter: pygments
+comments: true
 sass:
   sass_dir: _sass
   style: compressed
