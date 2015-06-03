@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: Site Title
+title: Basket 
 locale: en_US
-description: Describe your website here.
+description: For holding stories about how OSM is used in the wild.
 logo: site-logo.png
 search: true
 url: http://localhost:4000
