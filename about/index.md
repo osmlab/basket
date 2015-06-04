@@ -4,8 +4,8 @@ title: Basket
 excerpt: "For holding stories about how OSM is used in the wild."
 modified: 2014-08-08T19:44:38.564948-04:00
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: WeGraphics
+  feature: authors/osm.png
+  credit: OSM Institutions
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 

@@ -9,11 +9,37 @@ USAID_OFDA:
   twitter: https://twitter.com/theofda
   facebook: https://www.facebook.com/USAID.OFDA
 
-cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
-  avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
-  google:
-    plus: CorneliusFiddlebone
+Map_Give:
+  name: Map Give
+  web: http://mapgive.state.gov/
+  email:
+  bio: "Official State Deptartment initiative making it easier for volunteers and communities to create open map data for humanitarian and development purposes."
+  avatar: /authors/mapgive.png
+  twitter: https://twitter.com/mapgive
+  facebook: 
+
+Peace_Corps:
+  name: Peace Corps
+  web: http://www.peacecorps.gov/
+  email:
+  bio: "The Peace Corps is a volunteer program run by the United States government. As the preeminent international service organization of the United States, the Peace Corps sends Americans abroad to tackle the most pressing needs of people around the world."
+  avatar: /authors/peace.jpeg
+  twitter: https://twitter.com/peacecorps
+  facebook: https://www.facebook.com/peacecorps
+
+HOT_OSM:
+  name: HOT OSM
+  web: http://hotosm.org/
+  email:
+  bio: "The Humanitarian OpenStreetMap Team [HOT] applies the principles of open source and open data sharing for humanitarian response and economic development."
+  avatar: /authors/hot.png
+  twitter: https://twitter.com/hotosm
+  facebook: https://www.facebook.com/hotosm
+
+Etalab:
+  name: Etalab
+  web: https://www.etalab.gouv.fr/en/
+  email:
+  bio: "Mission under the authority of the Prime Minister responsible for the opening of public data and the development of the French Open Data platform."
+  avatar: /authors/etalab.jpeg
+  twitter: https://twitter.com/etalab
