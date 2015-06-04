@@ -3,10 +3,11 @@
 USAID_OFDA:
   name: USAID/OFDA
   web: http://1.usa.gov/1cxX1ZI
-  email: billy@rick.com
+  email: 
   bio: "USAID's Office of U.S. Foreign Disaster Assistance saves lives on behalf of the American people."
   avatar: /authors/OFDA.jpeg
   twitter: https://twitter.com/theofda
+  facebook: https://www.facebook.com/USAID.OFDA
 
 cornelius_fiddlebone:
   name: Cornelius Fiddlebone

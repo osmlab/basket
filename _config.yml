@@ -3,7 +3,7 @@
 title: Basket 
 locale: en_US
 description: For holding stories about how OSM is used in the wild.
-logo: site-logo.png
+logo: osm_logo.png
 url: //cmdrkerfy.github.io/basket
 
 # Jekyll configuration
