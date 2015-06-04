@@ -11,6 +11,7 @@ url: //cmdrkerfy.github.io/basket
 permalink:   /:categories/:title/
 markdown:    kramdown
 highlighter: pygments
+comments: true
 sass:
   sass_dir: _sass
   style: compressed
@@ -34,7 +35,7 @@ owner:
   name: Your Name
   avatar: bio-photo.jpg
   email: you@email.com
-  disqus-shortname:
+  disqus-shortname: osm-basket
   twitter: #username
   facebook: #username
   github: #username
