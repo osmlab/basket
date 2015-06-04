@@ -7,6 +7,7 @@ tags: [indonesia, volcano, GMU, USAID, MapGive]
 author: USAID_OFDA
 image:
   feature: /ind-volcano/volcano.jpg
+  teaser: /ind-volcano/volcano_small.jpg
 comments: true
 share: true
 ads: false
