@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Inital Blog Post"
+title: "Welcome to the Blog"
 modified:
 categories: blog
 excerpt:
@@ -10,4 +10,4 @@ image:
 date: 2013-08-08T15:39:55-04:00
 ---
 
-Text to change.
+Under construction. More content to come.
