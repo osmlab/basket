@@ -43,3 +43,12 @@ Etalab:
   bio: "Mission under the authority of the Prime Minister responsible for the opening of public data and the development of the French Open Data platform."
   avatar: /authors/etalab.jpeg
   twitter: https://twitter.com/etalab
+
+MSF:
+  name: MSF
+  web: http://www.msf.org/
+  email:
+  bio: "Médecins Sans Frontières (MSF) is an international, independent, medical humanitarian organisation."
+  avatar: /authors/msf.jpeg
+  twitter: https://twitter.com/msf
+  facebook: https://www.facebook.com/msf.english
