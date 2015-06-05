@@ -12,7 +12,3 @@ image:
 Eu inani dolorem iudicabit nec. Duis minim theophrastus ius in, impetus volumus molestie ex mea. Ad mutat ipsum his. Saepe liberavisse eu nam. Per decore splendide disputando id, qui duis repudiandae no. Quaestio constituto an cum, usu alterum vivendo ut, nam eu dissentias instructior.
 
 Cum eu omnis commodo, mucius nostro sea at. An diam soluta dictas has. An solet timeam expetenda eum, harum voluptaria per ad. Commodo numquam sed et. His in elit voluptaria.
-
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install So Simple Theme</a>
-
-[^1]: Example: *domain.com/category-name/post-title*
