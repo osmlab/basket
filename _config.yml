@@ -2,9 +2,10 @@
 
 title: Basket 
 locale: en_US
-description: For holding stories about how OSM is used in the wild.
-logo: osm_logo.png
-url: //cmdrkerfy.github.io/basket
+description: OSM use in the wild.
+logo:
+#url: //cmdrkerfy.github.io/basket
+#url: 127.0.0.1:4000
 
 # Jekyll configuration
 

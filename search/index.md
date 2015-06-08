@@ -26,6 +26,6 @@ sitemap: false
 <!-- Search result template -->
 <script type="text/x-template" id="search-result">
   <li><article>
-    <a href="##Url##">##Title## <span class="excerpt">##Excerpt##</span></a>
+    <a href="##Url##">##Title## <span class="entry-date">##Date##</span><span class="excerpt">##Excerpt##</span></a>
   </article></li>
 </script>
