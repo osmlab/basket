@@ -1,13 +1,13 @@
 # Authors
 
-USAID_OFDA:
-  name: USAID/OFDA
-  web: http://1.usa.gov/1cxX1ZI
-  email: 
-  bio: "USAID's Office of U.S. Foreign Disaster Assistance saves lives on behalf of the American people."
-  avatar: http://upload.wikimedia.org/wikipedia/commons/8/84/USAID-Logo.svg
-  twitter: https://twitter.com/theofda
-  facebook: https://www.facebook.com/USAID.OFDA
+# USAID_OFDA:
+#   name: USAID/OFDA
+#   web: http://1.usa.gov/1cxX1ZI
+#   email: 
+#   bio: "USAID's Office of U.S. Foreign Disaster Assistance saves lives on behalf of the American people."
+#   avatar: http://upload.wikimedia.org/wikipedia/commons/8/84/USAID-Logo.svg
+#   twitter: https://twitter.com/theofda
+#   facebook: https://www.facebook.com/USAID.OFDA
 
 Map_Give:
   name: Map Give
