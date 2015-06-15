@@ -4,7 +4,7 @@ title: Basket
 excerpt: "For holding stories about how OSM is used in the wild."
 modified: 2014-08-08T19:44:38.564948-04:00
 image:
-  feature: http://openstreetmap.id/wp-content/uploads/2012/09/walking-paper.jpg
+  feature: "http://openstreetmap.id/wp-content/uploads/2012/09/walking-paper.jpg"
   credit: OSM Institutions
   creditlink: http://walkingpapers.org/
 ---
