@@ -4,9 +4,9 @@ title: Basket
 excerpt: "For holding stories about how OSM is used in the wild."
 modified: 2014-08-08T19:44:38.564948-04:00
 image:
-  feature: authors/osm.png
+  feature: http://openstreetmap.id/wp-content/uploads/2012/09/walking-paper.jpg
   credit: OSM Institutions
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  creditlink: http://walkingpapers.org/
 ---
 
 Eu inani dolorem iudicabit nec. Duis minim theophrastus ius in, impetus volumus molestie ex mea. Ad mutat ipsum his. Saepe liberavisse eu nam. Per decore splendide disputando id, qui duis repudiandae no. Quaestio constituto an cum, usu alterum vivendo ut, nam eu dissentias instructior.
