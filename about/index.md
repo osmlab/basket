@@ -4,7 +4,7 @@ title: What is Basket?
 excerpt: "How OSM is used in the wild."
 modified: 2014-08-08T19:44:38.564948-04:00
 image:
-  feature: /images/GMU_mosaic.jpg
+  feature: images/GMU_mosaic.jpg
   credit: OSM Institutions
   creditlink: http://walkingpapers.org/
 ---
