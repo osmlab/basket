@@ -3,7 +3,7 @@ layout: post
 title: "Volcano Mapping in Indonesia"
 excerpt: "Using OSM to mitigate the impact of volcanic eruptions."
 categories: articles
-tags: [indonesia, volcano, GMU, USAID, MapGive, 2015]
+tags: [indonesia, Karangetang, volcano, GMU, 2015]
 author: George_Mason
 image:
   feature: /ind-volcano/volcano.jpg
