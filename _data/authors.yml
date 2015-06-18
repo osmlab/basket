@@ -16,7 +16,8 @@ Map_Give:
   bio: "Official State Deptartment initiative making it easier for volunteers and communities to create open map data for humanitarian and development purposes."
   avatar: /authors/mapgive.png
   twitter: https://twitter.com/mapgive
-  facebook: 
+  facebook:
+  disqus-shortname: mapgive 
 
 Peace_Corps:
   name: Peace Corps
@@ -26,6 +27,7 @@ Peace_Corps:
   avatar: /authors/peace.jpeg
   twitter: https://twitter.com/peacecorps
   facebook: https://www.facebook.com/peacecorps
+  disqus-shortname: peacecorps
 
 HOT_OSM:
   name: HOT OSM

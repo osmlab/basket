@@ -89,3 +89,9 @@ DEPENDENCIES
   jekyll-sitemap
   octopress (~> 3.0.0.rc.12)
   rouge
+<<<<<<< HEAD
+=======
+
+BUNDLED WITH
+   1.10.4
+>>>>>>> 616e5976d31fcfa76742b1c470bc99c99be5c51b
