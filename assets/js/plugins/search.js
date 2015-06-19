@@ -1,3 +1,5 @@
+---
+---
 /**
  * A simple JSON search
  * Requires jQuery (v 1.7+)
@@ -149,12 +151,33 @@ function showSearchResults(results) {
  * @return {String} Populated HTML
  */
 function populateResultContent(html, item) {
+    var tags = populateTags(item.tags);
     html = injectContent(html, item.title, '##Title##');
     html = injectContent(html, item.link, '##Url##');
     html = injectContent(html, item.excerpt, '##Excerpt##');
     html = injectContent(html, item.date, '##Date##');
+    html = injectContent(html, tags, '##Tags##');
     return html;
 }
+
+/**Davids function so probably no good
+ * converts array to html for use as tag links
+ *@param {array} array
+ *return (String} html
+ */
+
+function populateTags(array) {
+    var url = {{ site.url }};
+    var html = "";
+    for (i=0; i < array.length; i++) {
+		var tag = array[i];
+        html += "<a href=\"" + url + "/tags/#" + tag + "title=\"Pages tagged " + tag + ">" + tag + "</a>";
+    };
+    return html;
+}
+        
+
+
 
 
 /**

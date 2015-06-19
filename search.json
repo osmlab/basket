@@ -8,20 +8,11 @@ sitemap: false
     {% if forloop.index > 1 %},{% endif %}{
       "title"			: {{ post.title | jsonify }},
       "link"			: "{{ site.url }}{{ post.url }}",
-      "excerpt"		: "{{ post.excerpt }}",
-      "date"		: "{{ post.date | date: '%B %d, %Y' }}" 
+      "excerpt"			: "{{ post.excerpt }}",
+      "date"			: "{{ post.date | date: '%B %d, %Y' }}",
+      "tags"			: {{ post.tags | jsonify }}
     }
   {% endif %}
 {% endfor %}
 
-{% for page in site.pages %}
-  {% if page.layout != 'none' and page.layout != 'none' and page.title != null and page.title != empty and page.search_omit != true %}
-    {% if forloop.index > 1 %},{% endif %}{
-      "title"			: {{ page.title | jsonify }},
-      "link"			: "{{ site.url }}{{ page.url | replace: 'index.html', '' }}",
-      "excerpt"		: "{{ page.excerpt }}",
-      "date"		: "{{ page.date | date: '%B %d, %Y' }}" 
-    }
-  {%endif%}
-{% endfor %}
 ]
