@@ -2,7 +2,6 @@
 layout: page
 title: Articles
 excerpt: "For holding stories about how OSM is used in the wild."
-logo: globebasket.png
 search_omit: true
 ---
 
