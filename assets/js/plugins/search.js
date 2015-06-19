@@ -76,7 +76,7 @@ function execSearch(q) {
         }
 
         getSearchResults(processData());
- :   }
+    }
 }
 
 
