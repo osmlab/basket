@@ -1,4 +1,5 @@
 ---
+---
 
 ##An OSM Blog. Currently in test-phase.
 
@@ -18,4 +19,4 @@ Assuming that the Grunt CLI has been installed and that the project has already 
 
 Deploying Jekyll site to GitHub Pages (http://jekyllrb.com/docs/github-pages/)
 -This involves changing the baseurl name in the _config file
----
+
