@@ -3,8 +3,8 @@
 title: Basket 
 locale: en_US
 description: OSM use in the wild.
-logo: globebasket.png
 url: //osmlab.github.io/basket
+logo: globebasket.png
 ads: false
 
 # Jekyll configuration
