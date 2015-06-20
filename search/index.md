@@ -11,7 +11,7 @@ sitemap: false
 ---
   
 <!-- Search form -->
-<form method="get" action="{{ site.url }}/search/" data-search-form class="simple-search">
+<form method="get" action="{{ site.baseurl }}/search/" data-search-form class="simple-search">
   <label for="q">Search {{ site.title }} for:</label>
   <input type="search" name="q" id="q" placeholder="What are you looking for?" data-search-input id="goog-wm-qt" autofocus />
   <input type="submit" value="Search" id="goog-wm-sb" />
@@ -23,7 +23,21 @@ sitemap: false
 </h6>
 <ul class="post-list" data-search-results>
 {% for post in site.posts limit:10 %} 
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt }}</span>{% endif %}</a><span>{% if post.tags %}{% for tag in post.tags %}<a href="{{ site.url }}/tags/#{{ tag }}" title="Posts tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}{% endif %}</span></article></li>
+  <li>
+    <article>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt }}</span>{% endif %}</a>
+        <span>
+            {% if post.tags %}
+                {% for tag in post.tags %}
+                    <a href="{{ site.url }}/tags/#{{ tag }}" title="Posts tagged {{ tag }}">{{ tag }}</a>
+                    {% unless forloop.last %}
+                        &nbsp;&bull;&nbsp;
+                    {% endunless %}
+                {% endfor %}
+            {% endif %}
+        </span>
+    </article>
+  </li>
 {% endfor %}
 </ul>
 

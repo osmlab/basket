@@ -17,7 +17,10 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'assets/js/scripts.min.js': [
-            'assets/js/plugins/*.js',
+//            'assets/js/plugins/*.js',
+//grunts gives a weird Uglification failed using var if search.js is included, so I'm not including it as part of scripts.min.js
+            'assets/js/plugins/jquery*.js',
+            'assets/js/plugins/respon*.js',
             'assets/js/_*.js'
           ]
         }

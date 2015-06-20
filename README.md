@@ -15,6 +15,8 @@ Assuming that the Grunt CLI has been installed and that the project has already 
 3. run Grunt with 'grunt' command.
 4. run 'bundle install' to get required gems
 
+If jekyll build results in unresolved specs for some of the gems, try running 'sudo bundle clean --force' followed by 'bundle install'
+
 -The Grunt file does many optimization functions and builds the Jekyll site
 
 Deploying Jekyll site to GitHub Pages (http://jekyllrb.com/docs/github-pages/)

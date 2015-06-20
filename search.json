@@ -7,7 +7,7 @@ sitemap: false
   {% if post.title != null and post.title != empty and post.search_omit != true %}
     {% if forloop.index > 1 %},{% endif %}{
       "title"			: {{ post.title | jsonify }},
-      "link"			: "{{ site.url }}{{ post.url }}",
+      "link"			: "{{ site.baseurl }}{{ post.url }}",
       "excerpt"			: "{{ post.excerpt }}",
       "date"			: "{{ post.date | date: '%B %d, %Y' }}",
       "tags"			: {{ post.tags | jsonify }}
