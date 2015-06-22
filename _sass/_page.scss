@@ -45,6 +45,9 @@
 	@include font-size(16);
 	font-weight: 600;
 	a {
+	  padding: 2em;
+	  margin-left; margin-right: 2em;
+	  background-color: #666FF;
 		color: $text-color;
 	}
 }
