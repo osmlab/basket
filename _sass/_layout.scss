@@ -214,9 +214,10 @@ body {
 	@include font-size(12);
 	font-weight: 600;
 	background-color: #6666FF;
-	padding: 2em 
+	padding: 2em;
+	color: blue;
 	a { 
-		color: #505050;
+		color: blue;
 		background-color: #6666FF; 
 	}
 }
