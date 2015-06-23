@@ -39,13 +39,17 @@
 /* tag listing in page header */
 
 .entry-tags {
+  color: blue;
 	display: block;
 	margin-top: 2em;
 	text-transform: uppercase;
 	@include font-size(16);
 	font-weight: 600;
 	a {
-		color: $text-color;
+	  padding: 2px;
+	  margin-left; margin-right: 2em;
+	  background-color: #666FF;
+		color: blue;
 	}
 }
 
