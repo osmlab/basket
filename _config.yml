@@ -3,10 +3,9 @@
 title: Basket 
 locale: en_US
 description: OSM use in the wild.
-#url: //osmlab.github.io/basket
 url: http://osmlab.github.io/basket
 baseurl: /basket
-logo: globebasket.png
+logo: site-logo.png
 ads: false
 
 # Jekyll configuration
