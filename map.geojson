@@ -1,0 +1,28 @@
+---
+sitemap: false
+---
+
+
+{ "type": "FeatureCollection",
+	"features": [	
+	{% for post in site.posts %}
+  		{% if post.title != null and post.title != empty and post.search_omit != true  and post.coord %}
+    		{% if forloop.index > 1 %},{% endif %}
+				{"type" : "Feature",
+				 "geometry": {"type": "Point", "coordinates": {{ post.coord }} },
+				"properties" : {	
+      				"title"			: {{ post.title | jsonify }},
+      				"link"			: "{{ site.baseurl }}{{ post.url }}",
+      				"excerpt"		: "{{ post.excerpt }}",
+      				"date"			: "{{ post.date | date: '%B %d, %Y' }}",
+      				"tags"			: {{ post.tags | jsonify }},
+					"marker-size"	: "small",
+					"marker-color"	: "#ff0000",
+					"marker-symbol" : "circle"
+    				}
+				}	
+  		{% endif %}
+	{% endfor %}
+
+	]
+}
