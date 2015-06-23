@@ -7,9 +7,8 @@ sitemap: false
 	"features": [	
 	{% for post in site.posts %}
   		{% if post.title != null and post.title != empty and post.search_omit != true  and post.coord %}
-    		{% if forloop.index > 1 %},{% endif %}
 				{"type" : "Feature",
-				 "geometry": {"type": "Point", "coordinates": {{ post.coord }} },
+				 "geometry": {"type": "Point", "coordinates": {{ post.coord| jsonify }} },
 				"properties" : {	
       				"title"			: {{ post.title | jsonify }},
       				"link"			: "{{ site.baseurl }}{{ post.url }}",
@@ -21,6 +20,7 @@ sitemap: false
 					"marker-symbol" : "circle"
     				}
 				}	
+    		{% if forloop.last == false %},{% endif %}
   		{% endif %}
 	{% endfor %}
 
