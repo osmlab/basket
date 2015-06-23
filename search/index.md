@@ -26,12 +26,11 @@ sitemap: false
   <li>
     <article>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt }}</span>{% endif %}</a>
-        <span>
+        <span class="entry-tags">
             {% if post.tags %}
                 {% for tag in post.tags %}
                     <a href="{{ site.url }}/tags/#{{ tag }}" title="Posts tagged {{ tag }}">{{ tag }}</a>
                     {% unless forloop.last %}
-                        &nbsp;&bull;&nbsp;
                     {% endunless %}
                 {% endfor %}
             {% endif %}
