@@ -13,7 +13,7 @@
 
 <div id="main" role="main">
   <article class="hentry">
-    {% if page.image.feature %}<img src="{{ site.url }}/images{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Image credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
+    {% if page.image.feature %}<img src="{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Image credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
     <div class="entry-wrapper">
       <header class="entry-header">
         <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}{% endunless %}{% endfor %}</span>
@@ -30,7 +30,7 @@
         {% if author.avatar contains 'http' %}
           <img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
         {% else %}
-          <img src="{{ site.baseurl }}/images/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
+          <img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
         {% endif %}
         <span class="author vcard">By <span class="fn">{{ author.name }}</span></span>
         <span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-calendar-o"></i> {{ page.date | date: "%B %d, %Y" }}</time></span>
