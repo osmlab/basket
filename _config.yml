@@ -33,6 +33,11 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 comments: true
 
+#collections: 
+#  map:
+#    output: true
+#    permalink: /map/mappy/:path
+
 # Site owner
 owner:
   name: Your Name
