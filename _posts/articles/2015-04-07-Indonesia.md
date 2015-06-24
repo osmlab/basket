@@ -6,8 +6,8 @@ categories: articles
 tags: [indonesia, Karangetang, volcano, GMU, 2015]
 author: George_Mason
 image:
-  feature: /ind-volcano/volcano.jpg
-  teaser: /ind-volcano/volcano_small.jpg
+  feature: https://cloud.githubusercontent.com/assets/7816685/8313716/957df576-19b2-11e5-9475-6e8787061dae.jpg
+  teaser: https://cloud.githubusercontent.com/assets/7816685/8313717/957e1a24-19b2-11e5-8b6d-37c08988e3b5.jpg
 comments: true
 share: true
 ads: false
