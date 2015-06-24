@@ -14,7 +14,7 @@ Map_Give:
   web: http://mapgive.state.gov/
   email:
   bio: "Official State Deptartment initiative making it easier for volunteers and communities to create open map data for humanitarian and development purposes."
-  avatar: /authors/mapgive.png
+  avatar: https://cloud.githubusercontent.com/assets/7816685/8313694/7fee5cc8-19b2-11e5-9812-61e264bfa8df.png
   twitter: https://twitter.com/mapgive
   facebook:
   disqus-shortname: mapgive 
@@ -24,7 +24,7 @@ Peace_Corps:
   web: http://www.peacecorps.gov/
   email:
   bio: "The Peace Corps is a volunteer program run by the United States government. As the preeminent international service organization of the United States, the Peace Corps sends Americans abroad to tackle the most pressing needs of people around the world."
-  avatar: /authors/peace.jpeg
+  avatar: https://cloud.githubusercontent.com/assets/7816685/8313693/7fed6908-19b2-11e5-812b-b83ea389b3e3.jpeg
   twitter: https://twitter.com/peacecorps
   facebook: https://www.facebook.com/peacecorps
   disqus-shortname: peacecorps
