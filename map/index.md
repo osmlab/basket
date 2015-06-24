@@ -8,5 +8,5 @@ image:
   credit: 
   creditlink: 
 ---
-<script src="https://embed.github.com/view/geojson/osmlab/basket/gh-pages/map.geojson"></script>
+<script src="https://embed.github.com/view/geojson/osmlab/basket/gh-pages/maptmp.geojson"></script>
 
