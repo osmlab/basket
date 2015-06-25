@@ -20,7 +20,7 @@
     }
     @include media($large) {
       max-width: em(960);
-    }
+    } 
   }
 }
 
@@ -58,7 +58,7 @@
   @include animation-duration(1s);
     @include animation-delay(.75s);
   a {
-    color: $black;
+    color: $base-blue;
   }
 }
 
