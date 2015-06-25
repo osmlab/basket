@@ -4,7 +4,7 @@ form {
 		margin-bottom: 5px; 
 		padding: 0; 
 		border-width: 0; 
-	}
+	} 
 	legend { 
 		display: block;
 		width: 100%;
@@ -63,7 +63,7 @@ select {
 	padding: 4px;
 	margin-bottom: 5px / 4;
 	background-color: $white;
-	border: 1px solid lighten($black, 80);
+	border: 1px solid lighten($base-color, 80);
 	color: $text-color; 
 	&:hover {
 		border-color: lighten($accent-color, 50); 
