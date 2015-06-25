@@ -3,10 +3,10 @@ body {
 	padding: 0;
 	width: 100%;
 	background-color: $body-color;
-	border-top: 5px solid $black;
+	border-top: 5px solid #95c295;
 }
 
-
+ 
 // Top Navigation
 // --------------------------------------------------
 
@@ -19,7 +19,7 @@ body {
 		vertical-align: top;
 		margin: 0 0 50px;
 		padding: 4px 20px;
-		background-color: $black;
+		
 		@include media($medium) {
 			width: auto;
 			@include rounded(0 0 10px 10px);
@@ -213,12 +213,12 @@ body {
 	text-transform: uppercase;
 	@include font-size(12);
 	font-weight: 600;
-	background-color: #6666FF;
+	background-color: #ADD8E6;
 	padding: 2em;
-	color: blue;
+	
 	a { 
-		color: blue;
-		background-color: #6666FF; 
+	
+		background-color: #ADD8E6; 
 	}
 }
 span + .entry-title {
