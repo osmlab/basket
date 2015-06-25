@@ -44,7 +44,7 @@
     color: $white;
     @include rounded(4px);
     &:hover {
-      background-color: lighten($black, 10);
+      background-color: lighten($base-color, 10);
     }
   }
 }
