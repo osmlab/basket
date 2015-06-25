@@ -7,10 +7,10 @@ $alt-font: 'volkhov', serif;
 
 $doc-font-size: 16;
 $doc-line-height: 24;
-
+ 
 $border-radius: 3px;
 
-
+ 
 // set-up the body font-size / line-height
 body {
   margin-top: 0px + $doc-line-height;
@@ -20,13 +20,14 @@ body {
 
 // COLORS =====================================================
 $body-color         : #fff;
-$text-color         : #222;
-$base-color         : #99CDC9;    
+$text-color         : #344152;
+$base-color         : #99CDC9;    /*green color base for nav and who knows what else */
 $comp-color         : spin($base-color, 180); 
 $border-color       : #ddd;
 $white              : #fff;
 $black              : #000;
-$accent-color       : $black;
+$base-blue          : #8DB6CD;
+$accent-color       : $base-color;
 $link-color         : #222;
 
 $table-border-color           : $border-color;
