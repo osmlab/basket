@@ -4,7 +4,7 @@
 
 .navigation-wrapper {
   text-align: center;
-  @include clearfix;
+  @include clearfix; 
   ul {
     display: inline-block;
     width: 100%;
@@ -44,7 +44,7 @@
     color: $white;
     @include rounded(4px);
     &:hover {
-      background-color: lighten($base-color, 10);
+      background-color: lighten($base-color, 10); /*change color of nav selection via base color via lightening base color*/
     }
   }
 }
@@ -90,7 +90,7 @@
   vertical-align: top;
   margin: 0;
   padding: 6px 20px;
-  background-color: $base-color;
+  background-color: $black;
   height: 44px;
   @include rounded(0);
   @include media($medium) {
