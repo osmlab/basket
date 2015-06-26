@@ -90,7 +90,7 @@
   vertical-align: top;
   margin: 0;
   padding: 6px 20px;
-  background-color: $black;
+  background-color: $base-color;
   height: 44px;
   @include rounded(0);
   @include media($medium) {
