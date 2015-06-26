@@ -302,6 +302,15 @@ span + .entry-title {
 		border-bottom-width: 0;
 	}
 }
+@at-root {
+		.archive-wrap {
+			@include fill-parent;
+			.page-content {
+				@include reset-all;
+				@include fill-parent;
+			}
+		}
+	}
 // Disqus Comments
 #disqus_thread {
 	margin-top: 2em;
