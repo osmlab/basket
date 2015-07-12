@@ -1,6 +1,7 @@
 ---
 layout: page
 title: What is Basket?
+navid: About
 excerpt: "How OSM is used in the wild."
 modified: 2014-08-08T19:44:38.564948-04:00
 image:

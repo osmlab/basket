@@ -59,7 +59,7 @@ input,
 textarea,
 select {
 	display: inline-block;
-	width: 100%;
+	width: 80%;
 	padding: 4px;
 	margin-bottom: 5px / 4;
 	background-color: $white;
@@ -175,12 +175,14 @@ textarea[readonly] {
 // focus and active
 // --------------------------------------------------
 
+
 input:focus,
 textarea:focus {
 	border-color : $accent-color;
 	outline : 0;
 	outline : thin dotted \9; 
 }
+
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus,

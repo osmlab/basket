@@ -1,14 +1,18 @@
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
 	    <ul>
-      {% for link in site.data.navigation %}
+        {% for link in site.data.navigation %}
 		    {% if link.url contains 'http' %}
 		        {% assign domain = '' %}
 		        {% else %}
 		        {% assign domain = site.baseurl %}
 		    {% endif %}
+		    {% if link.title == page.navid %}
+		    <li><a id="highlight" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+		    {% else %}
 		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-		  {% endfor %}
+		    {% endif %}
+		{% endfor %}
 	    </ul>
 	</nav>
 </div><!-- /.navigation-wrapper -->

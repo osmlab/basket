@@ -4,10 +4,10 @@
   url: /about/
 
 - title: Articles
-  url: /articles/
+  url: /
 
-- title: Search
-  url: /search/
+#- title: Search
+#  url: /search/
 
 - title: Map
   url: /map/
