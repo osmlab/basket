@@ -15,7 +15,7 @@
       				"link"			: "/basket/articles/Botswana/",
       				"excerpt"		: "A brief case study written by Peace Corps' Mike Banfield and Theresa Govert, currently working in Botswana.",
       				"date"			: "March 01, 2015",
-      				"tags"			: ["Botswana","QGIS","Health","Malaria","Peace Corps","Case Study",2015],
+      				"tags"			: ["Botswana","QGIS","Health","Malaria","Peace Corps","Case Study","2015"],
 					"marker-size"	: "small",
 					"marker-color"	: "#ff0000",
 					"marker-symbol" : "circle"
@@ -32,7 +32,7 @@
       				"link"			: "/basket/articles/Ebola-GIS/",
       				"excerpt"		: "A case study created by MSF highlighting the use of GIS during the Ebola response in Guinea.",
       				"date"			: "July 01, 2014",
-      				"tags"			: ["Ebola","Guinea","MSF","Case Study","GIS",2014],
+      				"tags"			: ["Ebola","Guinea","MSF","Case Study","GIS","2014"],
 					"marker-size"	: "small",
 					"marker-color"	: "#ff0000",
 					"marker-symbol" : "circle"
