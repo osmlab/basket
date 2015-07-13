@@ -111,8 +111,13 @@ function processData() {
             results = "";
 
         $.each(data, function(index, item) {
-            // check if search term is in content or title 
-            if (item.excerpt.toLowerCase().indexOf(q.toLowerCase()) > -1 || item.title.toLowerCase().indexOf(q.toLowerCase()) > -1) {
+
+            // http://stackoverflow.com/questions/8072774/difficulty-converting-an-array-of-strings-tolowercase-and-adding-to-my-function
+            var tmp = item.tags.join('~').toLowerCase()
+            var lcArray = tmp.split('~')
+
+            // check if search term is in content or title or tags!
+            if (item.excerpt.toLowerCase().indexOf(q.toLowerCase()) > -1 || item.title.toLowerCase().indexOf(q.toLowerCase()) > -1 || lcArray.indexOf(q.toLowerCase()) > -1) {
                 var result = populateResultContent($resultTemplate.html(), item);
                 resultsCount++;
                 results += result;
