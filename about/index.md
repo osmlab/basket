@@ -10,6 +10,6 @@ image:
   creditlink: https://www.flickr.com/people/51648834@N00
 ---
 
-Eu inani dolorem iudicabit nec. Duis minim theophrastus ius in, impetus volumus molestie ex mea. Ad mutat ipsum his. Saepe liberavisse eu nam. Per decore splendide disputando id, qui duis repudiandae no. Quaestio constituto an cum, usu alterum vivendo ut, nam eu dissentias instructior.
+OpenStreetMap Basket features a collection of case studies and lessons learned from government, multilateral and non-profit institutions who use and contribute to OSM in their official line of work. We invite you to take a look or submit a case study of your own, and we hope you’ll learn something from our experiences using OSM to shape policy and strengthen field projects. 
 
-Cum eu omnis commodo, mucius nostro sea at. An diam soluta dictas has. An solet timeam expetenda eum, harum voluptaria per ad. Commodo numquam sed et. His in elit voluptaria.
+Basket is maintained by the OSM Institutions community of practice, whose members include MapGive of the United States Department of State, the World Bank, USAID, Peace Corps, CDC, the Red Cross and Missing Maps. 
