@@ -65,8 +65,9 @@ select {
 	background-color: $white;
 	border: 1px solid lighten($base-color, 80);
 	color: $text-color; 
+	border-color:#99CDC9;
 	&:hover {
-		border-color: lighten($accent-color, 50); 
+		border-color: #99CDC9; 
 	}
 }
 .input-mini { 

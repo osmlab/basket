@@ -78,6 +78,46 @@ span + .entry-title {
 	}
 }
 
+.footer-title {
+    font-family: $alt-font;
+    font-style: italic;
+    @include font-size(22,yes,22);
+    font-weight: 300;
+    line-height: 1;
+    color: #344152;
+    letter-spacing: -3px;
+    a {
+        color: $black;
+        text-decoration: underline;
+    }
+    @include media($medium) {
+        @include font-size(32,yes,32);
+    }
+    @include media($large) {
+        @include font-size(48,yes,52);
+    }
+}
+
+#footer-subtitle {
+    font-family: $alt-font;
+    font-style: italic;
+    @include font-size(14,yes,14);
+    font-weight: 100;
+    line-height: 1;
+    color: #344152;
+    letter-spacing: -3px;
+    a {
+        color: $black;
+        text-decoration: underline;
+    }
+    @include media($medium) {
+        @include font-size(22,yes,22);
+    }
+    @include media($large) {
+        @include font-size(28,yes,32);
+    }
+}
+
 /* page/post wrapper */
 
 .entry-wrapper {
