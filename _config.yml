@@ -6,7 +6,7 @@ description: OSM use in the wild.
 #url: //osmlab.github.io/basket
 url: http://osmlab.github.io/basket
 baseurl: /basket
-logo: globebasket.png
+#logo: globebasket.png
 ads: false
 
 # Jekyll configuration
