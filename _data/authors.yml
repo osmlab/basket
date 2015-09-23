@@ -3,7 +3,7 @@
 # USAID_OFDA:
 #   name: USAID/OFDA
 #   web: http://1.usa.gov/1cxX1ZI
-#   email: 
+#   email:
 #   bio: "USAID's Office of U.S. Foreign Disaster Assistance saves lives on behalf of the American people."
 #   avatar: http://upload.wikimedia.org/wikipedia/commons/8/84/USAID-Logo.svg
 #   twitter: https://twitter.com/theofda
@@ -17,7 +17,7 @@ Map_Give:
   avatar: https://cloud.githubusercontent.com/assets/7816685/8313694/7fee5cc8-19b2-11e5-9812-61e264bfa8df.png
   twitter: https://twitter.com/mapgive
   facebook:
-  disqus-shortname: mapgive 
+  disqus-shortname: mapgive
 
 Peace_Corps:
   name: Peace Corps
@@ -63,3 +63,12 @@ George_Mason:
   avatar: https://pbs.twimg.com/profile_images/378800000867468155/MwKiZaYb_400x400.jpeg
   twitter: https://twitter.com/georgemasonnews
   facebook: https://www.facebook.com/georgemason
+
+American_Red_Cross:
+  name: American Red Cross
+  web: http://redcross.org/
+  email:
+  bio: "The American Red Cross exists to provide compassionate care to those in need. Our network of generous donors, volunteers and employees share a mission of preventing and relieving suffering."
+  avatar: https://raw.githubusercontent.com/osmlab/basket/gh-pages/images/authors/american-red-cross_avatar.png
+  twitter: redcross
+  facebook: https://www.facebook.com/redcross
