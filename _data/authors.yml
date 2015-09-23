@@ -3,7 +3,7 @@
 # USAID_OFDA:
 #   name: USAID/OFDA
 #   web: http://1.usa.gov/1cxX1ZI
-#   email: 
+#   email:
 #   bio: "USAID's Office of U.S. Foreign Disaster Assistance saves lives on behalf of the American people."
 #   avatar: http://upload.wikimedia.org/wikipedia/commons/8/84/USAID-Logo.svg
 #   twitter: https://twitter.com/theofda
@@ -15,9 +15,9 @@ Map_Give:
   email:
   bio: "Official State Deptartment initiative making it easier for volunteers and communities to create open map data for humanitarian and development purposes."
   avatar: https://cloud.githubusercontent.com/assets/7816685/8313694/7fee5cc8-19b2-11e5-9812-61e264bfa8df.png
-  twitter: https://twitter.com/mapgive
+  twitter: mapgive
   facebook:
-  disqus-shortname: mapgive 
+  disqus-shortname: mapgive
 
 Peace_Corps:
   name: Peace Corps
@@ -25,7 +25,7 @@ Peace_Corps:
   email:
   bio: "The Peace Corps is a volunteer program run by the United States government. As the preeminent international service organization of the United States, the Peace Corps sends Americans abroad to tackle the most pressing needs of people around the world."
   avatar: https://cloud.githubusercontent.com/assets/7816685/8313693/7fed6908-19b2-11e5-812b-b83ea389b3e3.jpeg
-  twitter: https://twitter.com/peacecorps
+  twitter: peacecorps
   facebook: https://www.facebook.com/peacecorps
   disqus-shortname: peacecorps
 
@@ -35,7 +35,7 @@ HOT_OSM:
   email:
   bio: "The Humanitarian OpenStreetMap Team [HOT] applies the principles of open source and open data sharing for humanitarian response and economic development."
   avatar: https://cloud.githubusercontent.com/assets/7816685/8313697/7ff01e14-19b2-11e5-9644-26781acf639b.png
-  twitter: https://twitter.com/hotosm
+  twitter: hotosm
   facebook: https://www.facebook.com/hotosm
 
 Etalab:
@@ -44,7 +44,7 @@ Etalab:
   email:
   bio: "Mission under the authority of the Prime Minister responsible for the opening of public data and the development of the French Open Data platform."
   avatar: https://cloud.githubusercontent.com/assets/7816685/8313695/7fefb42e-19b2-11e5-9be6-4095c905471d.jpeg
-  twitter: https://twitter.com/etalab
+  twitter: etalab
 
 MSF:
   name: MSF
@@ -63,3 +63,12 @@ George_Mason:
   avatar: https://pbs.twimg.com/profile_images/378800000867468155/MwKiZaYb_400x400.jpeg
   twitter: https://twitter.com/georgemasonnews
   facebook: https://www.facebook.com/georgemason
+
+American_Red_Cross:
+  name: American Red Cross
+  web: http://redcross.org/
+  email:
+  bio: "The American Red Cross exists to provide compassionate care to those in need. Our network of generous donors, volunteers and employees share a mission of preventing and relieving suffering."
+  avatar: https://raw.githubusercontent.com/osmlab/basket/gh-pages/images/authors/american-red-cross_avatar.png
+  twitter: redcross
+  facebook: https://www.facebook.com/redcross
