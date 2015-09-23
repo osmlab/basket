@@ -9,7 +9,7 @@
 #   twitter: https://twitter.com/theofda
 #   facebook: https://www.facebook.com/USAID.OFDA
 
-Map_Give:
+-Map_Give:
   name: Map Give
   web: http://mapgive.state.gov/
   email:
@@ -19,7 +19,7 @@ Map_Give:
   facebook:
   disqus-shortname: mapgive
 
-Peace_Corps:
+-Peace_Corps:
   name: Peace Corps
   web: http://www.peacecorps.gov/
   email:
@@ -29,7 +29,7 @@ Peace_Corps:
   facebook: https://www.facebook.com/peacecorps
   disqus-shortname: peacecorps
 
-HOT_OSM:
+-HOT_OSM:
   name: HOT OSM
   web: http://hotosm.org/
   email:
@@ -38,7 +38,7 @@ HOT_OSM:
   twitter: hotosm
   facebook: https://www.facebook.com/hotosm
 
-Etalab:
+-Etalab:
   name: Etalab
   web: https://www.etalab.gouv.fr/en/
   email:
@@ -46,7 +46,7 @@ Etalab:
   avatar: https://cloud.githubusercontent.com/assets/7816685/8313695/7fefb42e-19b2-11e5-9be6-4095c905471d.jpeg
   twitter: etalab
 
-MSF:
+-MSF:
   name: MSF
   web: http://www.msf.org/
   email:
@@ -55,7 +55,7 @@ MSF:
   twitter: https://twitter.com/msf
   facebook: https://www.facebook.com/msf.english
 
-George_Mason:
+-George_Mason:
   name: George Mason University
   web: https://www.gmu.edu/
   email:
@@ -64,7 +64,7 @@ George_Mason:
   twitter: https://twitter.com/georgemasonnews
   facebook: https://www.facebook.com/georgemason
 
-American_Red_Cross:
+-American_Red_Cross:
   name: American Red Cross
   web: http://redcross.org/
   email:
