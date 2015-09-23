@@ -1,14 +1,13 @@
 ---
-layout: page
+layout: map
 title: Map
 navid: Map
-excerpt: 
-modified: 2014-08-08T19:44:38.564948-04:00
+excerpt:
+modified: 2014-09-23
 image:
-  feature: 
-  credit: 
-  creditlink: 
+  feature:
+  credit:
+  creditlink:
 ---
-<div style="margin-left:auto;margin-right:auto;width:100%">
-<script src="https://embed.github.com/view/geojson/osmlab/basket/gh-pages/_site/map.geojson?height=300&width=700"></script></div>
 
+<div id="map" style="margin: 0 auto 12px auto; height:400px; max-width:1000px;"></div>

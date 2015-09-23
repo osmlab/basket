@@ -10,7 +10,7 @@ image:
 comments: true
 share: true
 ads: false
-coord: [-17.8087, 30.9289]
+coord: "-17.8087, 30.9289"
 ---
 
 [Community mapping case study]({{ site.baseurl }}/assets/Missing_Maps_community_mapping_sep16.pdf)
