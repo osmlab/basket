@@ -12,4 +12,9 @@ image:
 
 OpenStreetMap Basket features a collection of case studies and lessons learned from government, multilateral and non-profit institutions who use and contribute to OSM in their official line of work. We invite you to take a look or submit a case study of your own, and we hope you’ll learn something from our experiences using OSM to shape policy and strengthen field projects. 
 
-Basket is maintained by the OSM Institutions community of practice, whose members include {% for x in site.data.authors %}{% if forloop.last == false %}{{ x[1].name[1] }}, {% else %} and {{ x[1].name[1] }}{% endif %}{% endfor %}. 
+Basket is maintained by the OSM Institutions community of practice, whose members include 
+{% for item in site.data.authors %}
+    {% if forloop.last == false %}
+        {{ item[1].name }}, {% else %} and {{ item[1].name }}
+    {% endif %}
+{% endfor %}. 
