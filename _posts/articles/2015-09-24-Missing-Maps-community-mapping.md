@@ -6,7 +6,7 @@ categories: articles
 tags: [Red Cross, Missing Maps, Case Study, Community Mapping, Field Papers, OpenMapKit, '2015']
 author: American_Red_Cross
 image:
-  feature: https://raw.githubusercontent.com/osmlab/basket/gh-pages/images/feature/missing-maps-community-mapping.jpg
+  feature: 2015-09-24_Missing-Maps-community-mapping_feature.jpg
 comments: true
 share: true
 ads: false
