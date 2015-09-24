@@ -26,7 +26,9 @@
     {% endif %}
     <div class="entry-wrapper">
       <header class="entry-header">
-        <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
+        <h1 class="entry-title" style="margin-top: 35px;">
+          {% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}
+        </h1>
       </header>
       <div class="entry-content">
         {{ content }}

@@ -101,11 +101,11 @@ span + .entry-title {
 #footer-subtitle {
     font-family: $alt-font;
     font-style: italic;
-    @include font-size(14,yes,14);
+    @include font-size(16,yes,16);
     font-weight: 100;
     line-height: 1;
     color: #344152;
-    letter-spacing: -3px;
+    letter-spacing: -1px;
     a {
         color: $black;
         text-decoration: underline;
@@ -240,7 +240,7 @@ span + .entry-title {
 #home,
 #page {
 	.entry-wrapper {
-		max-width: em(760);
+		max-width: em(800);
 	}
 	.entry-title {
 		text-align: center;
