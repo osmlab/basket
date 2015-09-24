@@ -17,8 +17,10 @@ This is an existing [Grunt project](http://gruntjs.com/getting-started). The Gru
 ####Posts
 - For the the images set in the YAML front matter (i.e. the feature image property), include only the file name and upload the image file into the 'images/posts/' folder (alternatively you can also use a URL link to an image file).
 - For the Facebook share image: "Use images that are at least 1200 x 630 pixels for the best display on high resolution devices."
+
 ####Authors
 - For the avatar image set in `authors.yml` include only the file name and upload the image file into the `images/authors/` folder.
+
 ####Jekyll
 - The [Jekyll help](https://jekyllrb.com/docs/github-pages/) has tips on deploying to GitHub pages.
    - This involves changing the baseurl name in the \_config file.
