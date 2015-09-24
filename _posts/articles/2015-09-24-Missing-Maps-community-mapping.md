@@ -7,6 +7,7 @@ tags: [Red Cross, Missing Maps, Case Study, Community Mapping, Field Papers, Ope
 author: American_Red_Cross
 image:
   feature: 2015-09-24_Missing-Maps-community-mapping_feature.jpg
+  facebook: 2015-09-24_Missing-Maps-community-mapping_facebook.jpg
 comments: true
 share: true
 ads: false
