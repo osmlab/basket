@@ -6,6 +6,21 @@
 <head>
 {% include head.html %}
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+<style>
+.leaflet-popup-content-wrapper{
+	background:#2c3e50;
+	color:#99CDC9
+}
+.leaflet-popup-tip{
+	background:#2c3e50;
+
+}
+.leaflet-popup-content-wrapper {
+    padding: 1px;
+    text-align: left;
+    border-radius: 5px;
+}
+</style>
 </head>
 
 <body id="page">
@@ -68,7 +83,7 @@
           var thisLat = parseFloat(thisLocation[0]),
             thisLng = parseFloat(thisLocation[1]);
 
-          var thisHtml = '<a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title}} </a>';
+          var thisHtml = '<a href ={{ site.baseurl }}{{ post.url }}><span style="display: block;color:#99CDC9"> <b>{{ site.data.authors[post.author].name }}</b><br>{{ post.title}}</span></a>';
           L.marker([thisLat, thisLng],{icon: icon}).bindPopup(thisHtml).addTo(locationsGroup);
 
         }
