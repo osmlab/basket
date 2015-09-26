@@ -6,8 +6,8 @@ categories: articles
 tags: [indonesia, Karangetang, volcano, GMU, '2015']
 author: George_Mason
 image:
-  feature: https://cloud.githubusercontent.com/assets/7816685/8313716/957df576-19b2-11e5-9475-6e8787061dae.jpg
-  teaser: https://cloud.githubusercontent.com/assets/7816685/8313717/957e1a24-19b2-11e5-8b6d-37c08988e3b5.jpg
+  feature: 2015-04-07-Indonesia_feature.jpg
+  teaser: 2015-04-07-Indonesia_teaser.jpg
 comments: true
 share: true
 ads: false
@@ -21,8 +21,8 @@ Full article: [Map-Off Unites Regional Community for Humanitarian Effort](https:
 >Imagine working on projects intended to provide health care to remote villages in Africa, assist with volcano eruption preparedness and mitigation plans in East Asia, or minimize the impact of natural disasters around the world, from your own computer.
 
 <figure class="half">
-	<img src="https://raw.githubusercontent.com/CmdrKerfy/basket/gh-pages/images/ind-volcano/gmu.jpg">
-	<img src="https://raw.githubusercontent.com/CmdrKerfy/basket/gh-pages/images/ind-volcano/gmu2.jpg">
+	<img src="{{ site.baseurl }}/images/posts/2015-04-07-Indonesia_content01.jpg">
+	<img src="{{ site.baseurl }}/images/posts/2015-04-07-Indonesia_content02.jpg">
 	<figcaption>Photo Credit: Mason News</figcaption>
 </figure>
 
