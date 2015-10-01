@@ -21,14 +21,16 @@ body {
 // COLORS =====================================================
 $body-color         : #fff;
 $text-color         : #344152;
-$base-color         : #99CDC9;    /*green color base for nav and who knows what else */
+$base-color         : #90CCCB;    /*green color base for nav and who knows what else */
 $comp-color         : spin($base-color, 180); 
 $border-color       : #ddd;
 $white              : #fff;
 $black              : #000;
-$base-blue          : #8DB6CD;
-$accent-color       : $base-color;
+$base-blue          : $base-color; /*#8DB6CD;*/
+$accent-color       : #AED2D2;
 $link-color         : #222;
+$bright-color		: #F8F4A1;
+$bright-accent		: #AFAC3D; 
 
 $table-border-color           : $border-color;
 $table-border                 : 1px solid $table-border-color;

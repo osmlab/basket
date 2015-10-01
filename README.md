@@ -20,6 +20,7 @@ This is an existing [Grunt project](http://gruntjs.com/getting-started). The Gru
 
 ####Authors
 - For the avatar image set in `authors.yml` include only the file name and upload the image file into the `images/authors/` folder.
+- Add a disqus-shortname to your institution in `authors.yml` to make [Disqus](https://disqus.com/) comments available on all your institutions posts.
 
 ####Jekyll
 - The [Jekyll help](https://jekyllrb.com/docs/github-pages/) has tips on deploying to GitHub pages.

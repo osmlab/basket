@@ -47,8 +47,8 @@
 	a {
 	  padding: .2em .4em;
 	  margin: 0 .2em;
-	  background-color: #8DB6CD;
-	  color: #f9fff9;
+	  background-color: $bright-color;
+	  color: $bright-accent; /*#f9fff9;*/
 	  border-radius: 5px;
 	}
 }

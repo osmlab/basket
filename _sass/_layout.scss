@@ -213,12 +213,11 @@ body {
 	text-transform: uppercase;
 	@include font-size(12);
 	font-weight: 600;
-	background-color: #ADD8E6;
 	padding: 2em;
 	
 	a { 
 	
-		background-color: #ADD8E6; 
+		background-color: $base-color; 
 	}
 }
 span + .entry-title {
