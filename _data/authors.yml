@@ -9,8 +9,8 @@
 #   twitter: theofda
 #   facebook: https://www.facebook.com/USAID.OFDA
 
-Map_Give:
-  name: Map Give
+MapGive:
+  name: MapGive
   web: http://mapgive.state.gov/
   email:
   bio: "Official State Deptartment initiative making it easier for volunteers and communities to create open map data for humanitarian and development purposes."
