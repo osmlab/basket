@@ -7,7 +7,7 @@ tags: [Nepal,Kathmandu,Case Study]
 author: MapGive
 image:
   feature: http://mapgive.state.gov/assets/img/alyssa-wright.jpg
-comments: true
+comments: false
 share: true
 ads: false
 coord: '27.7076762,85.3148882'
