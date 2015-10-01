@@ -11,12 +11,15 @@ search_omit: true
 {% endfor %}
 {% endcapture %}
 
+#{% assign tags_list = site_tags | split:',' | sort %}
 
-{% assign tags_list = site_tags | split:',' | sort %}
+#2014
+#{{ site.tags['2014'].size }}
 
 <ul class="tag-box inline">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+    #{{this_word}}
     <li><a href="#{{ this_word }}">{{ this_word }} <span>{{ site.tags[this_word].size }}</span></a></li>
   {% endunless %}{% endfor %}
 </ul>

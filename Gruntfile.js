@@ -13,6 +13,11 @@ module.exports = function(grunt) {
         '!assets/js/scripts.min.js'
       ]
     },
+    'json-minify': {
+      build: {
+        files: '_data/articles.json'
+      }
+    },
     uglify: {
       dist: {
         files: {
@@ -50,6 +55,13 @@ module.exports = function(grunt) {
         }]
       }
     },
+    sass: {
+      dist: {
+        files: {
+          'test/main.css': 'assets/css/main.scss'
+        }
+      }
+    },
     watch: {
       js: {
         files: [
@@ -72,12 +84,22 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-svgmin');
+<<<<<<< Updated upstream
+  grunt.loadNpmTasks('grunt-json-minify');
+=======
+  grunt.loadNpmTasks('grunt-contrib-sass');
+>>>>>>> Stashed changes
 
   // Register tasks
   grunt.registerTask('default', [
     'clean',
     'uglify',
     'imagemin',
+<<<<<<< Updated upstream
+    'json-minify',
+=======
+    'sass',
+>>>>>>> Stashed changes
     'svgmin'
   ]);
   grunt.registerTask('dev', [
