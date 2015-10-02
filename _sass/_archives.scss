@@ -67,7 +67,7 @@
     padding: 4px 6px;
     margin: 2px;
     color: $bright-accent;
-    background-color: $bright-color /*lighten($black, 90);*/
+    background-color: $bright-color; /*lighten($black, 90);*/
     @include rounded(4px);
     text-decoration: none;
     span {
