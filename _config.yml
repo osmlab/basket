@@ -5,7 +5,8 @@ locale: en_US
 description: OSM use in the wild.
 #url: //osmlab.github.io/basket
 url: http://osmlab.github.io/basket
-baseurl: /basket
+#baseurl: /basket
+baseurl: ''
 #logo: globebasket.png
 ads: false
 
