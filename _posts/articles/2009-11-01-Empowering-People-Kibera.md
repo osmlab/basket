@@ -3,7 +3,7 @@ layout: post
 title: Empowering People, Developing Communities
 excerpt: Maps led to validation and more government resources for the people of Kibera in Nairobi Kenya.
 categories: articles
-tags: [Kenya,Kibera,Case Study,slums]
+tags: [Kenya,Kibera,Case Study,slums,MapGive]
 author: MapGive
 image:
   feature: http://mapgive.state.gov/assets/img/kepha-ngito.jpg

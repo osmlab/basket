@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lessons learned from community mapping
+title: Lessons learned from Community Mapping
 excerpt: "A case study about work undertaken by the American Red Cross and the global Red Cross and Red Crescent network, in support of the larger Missing Maps partnership, in urban and rural areas in East Africa and Bangladesh."
 categories: articles
 tags: [Red Cross, Missing Maps, Case Study, Community Mapping, Field Papers, OpenMapKit, '2015']

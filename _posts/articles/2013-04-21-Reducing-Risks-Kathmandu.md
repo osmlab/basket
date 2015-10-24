@@ -3,7 +3,7 @@ layout: post
 title: Reducing Risks Before a Crisis
 excerpt: Read how mapping in Nepal now could save lives in the event of a future earthquake.
 categories: articles
-tags: [Nepal,Kathmandu,Case Study]
+tags: [Nepal,Kathmandu,Case Study,MapGive]
 author: MapGive
 image:
   feature: http://mapgive.state.gov/assets/img/alyssa-wright.jpg

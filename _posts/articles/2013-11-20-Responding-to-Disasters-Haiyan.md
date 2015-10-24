@@ -3,7 +3,7 @@ layout: post
 title: Responding to Disasters, Saving Lives
 excerpt: Read about how mappers helped in the aftermath of the 2013 typhoon Haiyan in the Philippines.
 categories: articles
-tags: [Philippines,typhoon,Haiyan]
+tags: [Philippines,typhoon,Haiyan,MapGive]
 author: MapGive
 image:
   feature: http://mapgive.state.gov/assets/img/philippines-story.jpg
