@@ -3,10 +3,9 @@
 title: OSM Stories 
 locale: en_US
 description: OSM use in the wild.
-#url: //osmlab.github.io/basket
 url: http://osmlab.github.io/basket
-#baseurl: /basket
-baseurl: ''
+baseurl: /basket
+#baseurl: ''
 ads: false
 
 # Jekyll configuration
