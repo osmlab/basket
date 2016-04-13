@@ -73,10 +73,12 @@
     	{% for author in site.data.authors %}
 			{% if author[0] == post.author %}	
 				{% assign index = forloop.index %}
+			{% else %}
+				{% assign index = 12 %}
 			{% endif %}
 		{% endfor %}
         if(("{{ post.coord }}").split(",").length === 2){
-		  var color = colorbrewer.Paired[12][{{index}} % 12];
+		  var color = colorbrewer.Paired[12][{{index}} % 11];
 		  var icon = L.MakiMarkers.icon({color: color });
           // remove spaces and split the string on the comma into an array
           var thisLocation = ("{{ post.coord }}").replace(/\s/g, '').split(",");
