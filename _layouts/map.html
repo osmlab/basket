@@ -84,8 +84,7 @@
           var thisLocation = ("{{ post.coord }}").replace(/\s/g, '').split(",");
           var thisLat = parseFloat(thisLocation[0]),
             thisLng = parseFloat(thisLocation[1]);
-
-          var thisHtml = '<a href ={{ site.baseurl }}{{ post.url }}><span style="display: block;color:#99CDC9"> <b>{{ site.data.authors[post.author].name }}</b><br>{{ post.title}}</span></a>';
+          var thisHtml = "<a href ={{ site.baseurl }}{{ post.url }}><span style='display: block;color:#99CDC9'> <b>{{ site.data.authors[post.author].name }}</b><br>{{ post.title | encode}}</span></a>";
           L.marker([thisLat, thisLng],{icon: icon}).bindPopup(thisHtml).addTo(locationsGroup);
 
         }
