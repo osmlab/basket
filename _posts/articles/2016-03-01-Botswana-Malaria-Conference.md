@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using open data to fight malaria: Botswana's National Malaria Conference 2015  
+title: "Using open data to fight malaria: Botswana's National Malaria Conference 2015"
 excerpt: "A brief blog post on the introduction of OSM to Botswana's National Malaria Conference by Maureen Saylor and Tiphaine Monroe, Peace Corps Botswana Volunteers."
 categories: articles
 tags: [Botswana, QGIS, Health, Malaria, Peace Corps, Blog Post, '2015']
