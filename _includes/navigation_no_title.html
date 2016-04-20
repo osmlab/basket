@@ -1,0 +1,24 @@
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop" style="transition: max-height 200ms; position: relative;height: 65px;">
+	    <ul>
+        {% for link in site.data.navigation %}
+		    {% if link.url contains 'http' %}
+		        {% assign domain = '' %}
+		        {% else %}
+		        {% assign domain = site.baseurl %}
+		    {% endif %}
+		    {% if link.title == page.navid %}
+		    <li><a id="highlight" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+		    {% else %}
+		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+		    {% endif %}
+		{% endfor %}
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+{% include browser-upgrade.html %}
+
+
+
+<div class="js-menu-screen menu-screen"></div>

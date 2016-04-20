@@ -1,5 +1,5 @@
 ---
-layout: fieldprojects
+layout: Map
 title: Map
 navid: Map
 excerpt:

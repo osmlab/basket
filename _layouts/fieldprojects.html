@@ -1,0 +1,118 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+<style>
+.leaflet-popup-content-wrapper{
+	background:#2c3e50;
+	color:#99CDC9
+}
+.leaflet-popup-tip{
+	background:#2c3e50;
+
+}
+.leaflet-popup-content-wrapper {
+    padding: 1px;
+    text-align: left;
+    border-radius: 5px;
+}
+</style>
+</head>
+
+<body id="page">
+
+{% include navigation_no_title.html %}
+
+
+
+<div id="main" role="main">
+
+  <article class="entry">
+    <!-- {% if page.image.feature %}<img src="{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %} -->
+      <!-- <header class="entry-header">
+        <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
+      </header> -->
+
+
+      <div class="entry-content">
+
+        {{ content }}
+
+        <!--
+        <div>
+        <a href="{{ site.baseurl }}{{ page.previous.url}}" class="btn" title="Stories">Stories</a>
+
+        <a href="{{ site.baseurl }}{{ page.next.url }}" class="btn" title="Field Projects">Field Projects</a>-->
+
+</div>
+      </div><!-- /.entry-content -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+{% include scripts.html %}
+
+<script src="http://colorbrewer2.org/export/colorbrewer.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+<script src="../assets/js/plugins/Leaflet.MakiMarkers.js"></script>
+<script>
+
+    var mapHeight = $(window).height() - $(".navigation-wrapper").outerHeight() - $(".masthead").outerHeight();
+    $('#map').height(mapHeight);
+
+    var tileUrl = 'http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
+      hotAttribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> | tiles by <a href="http://hot.openstreetmap.org/" target="\_blank">HOT</a>',
+      hotLayer = L.tileLayer(tileUrl, {attribution: hotAttribution});
+    var map = L.map('map', {
+      layers: [hotLayer],
+      center: new L.LatLng(0,0),
+      zoom: 2,
+      minZoom: 1,
+      scrollWheelZoom: false
+    });
+
+    var locationsGroup = L.featureGroup().addTo(map);
+	
+	
+    {% for post in site.posts %}
+    	{% for author in site.data.authors %}
+			{% if author[0] == post.author %}	
+				{% assign index = forloop.index %}
+			{% else %}
+				{% assign index = 12 %}
+			{% endif %}
+		{% endfor %}
+        if(("{{ post.coord }}").split(",").length === 2){
+		  var color = colorbrewer.Paired[12][{{index}} % 11];
+		  var icon = L.MakiMarkers.icon({color: color });
+          // remove spaces and split the string on the comma into an array
+          var thisLocation = ("{{ post.coord }}").replace(/\s/g, '').split(",");
+          var thisLat = parseFloat(thisLocation[0]),
+            thisLng = parseFloat(thisLocation[1]);
+          var thisHtml = "<a href ={{ site.baseurl }}{{ post.url }}><span style='display: block;color:#99CDC9'> <b>{{ site.data.authors[post.author].name }}</b><br>{{ post.title | encode}}</span></a>";
+          L.marker([thisLat, thisLng],{icon: icon}).bindPopup(thisHtml).addTo(locationsGroup);
+
+        }
+    {% endfor %}
+
+    map.fitBounds(locationsGroup.getBounds(), {padding: [100, 100]});
+
+    $(window).resize(function(){
+      var mapHeight = $(window).height() - $(".navigation-wrapper").outerHeight() - $(".masthead").outerHeight();
+      $('#map').height(mapHeight);
+      map.fitBounds(locationsGroup.getBounds(), {padding: [100, 100]});
+    });
+
+	</script>
+
+</body>
+</html>

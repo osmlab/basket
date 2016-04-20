@@ -1,0 +1,13 @@
+---
+layout: fieldprojects
+title: Map
+navid: Map
+excerpt:
+modified: 2014-09-23
+image:
+  feature:
+  credit:
+  creditlink:
+---
+
+<div id="map" style="margin: 0 auto 12px auto; max-height:600px; max-width:1200px;"></div>
