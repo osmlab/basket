@@ -1,5 +1,5 @@
 ---
-layout: Map
+layout: map
 title: Map
 navid: Map
 excerpt:
