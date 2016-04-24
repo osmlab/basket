@@ -5,7 +5,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 {% include head.html %}
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <style>
 .leaflet-popup-content-wrapper{
 	background:#2c3e50;
@@ -20,6 +22,11 @@
     text-align: left;
     border-radius: 5px;
 }
+.top-buttons {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
 </style>
 </head>
 
@@ -40,15 +47,17 @@
 
       <div class="entry-content">
 
+<!--
+        <div class="top-buttons">
+          <a href="{{ site.baseurl }}{{ page.previous.url}}" class="btn" title="Stories">Stories</a>
+
+          <a href="{{ site.baseurl }}{{ page.next.url }}" class="btn" title="Field Projects">Field Projects</a>
+        </div>
+-->
+
         {{ content }}
 
-        <!--
-        <div>
-        <a href="{{ site.baseurl }}{{ page.previous.url}}" class="btn" title="Stories">Stories</a>
 
-        <a href="{{ site.baseurl }}{{ page.next.url }}" class="btn" title="Field Projects">Field Projects</a>-->
-
-</div>
       </div><!-- /.entry-content -->
   </article>
 </div><!-- /#main -->
@@ -72,6 +81,7 @@
     var tileUrl = 'http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
       hotAttribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> | tiles by <a href="http://hot.openstreetmap.org/" target="\_blank">HOT</a>',
       hotLayer = L.tileLayer(tileUrl, {attribution: hotAttribution});
+
     var map = L.map('map', {
       layers: [hotLayer],
       center: new L.LatLng(0,0),
@@ -81,30 +91,192 @@
     });
 
     var locationsGroup = L.featureGroup().addTo(map);
-	
-	
-    {% for post in site.posts %}
-    	{% for author in site.data.authors %}
-			{% if author[0] == post.author %}	
-				{% assign index = forloop.index %}
-			{% else %}
-				{% assign index = 12 %}
-			{% endif %}
-		{% endfor %}
-        if(("{{ post.coord }}").split(",").length === 2){
-		  var color = colorbrewer.Paired[12][{{index}} % 11];
-		  var icon = L.MakiMarkers.icon({color: color });
-          // remove spaces and split the string on the comma into an array
-          var thisLocation = ("{{ post.coord }}").replace(/\s/g, '').split(",");
-          var thisLat = parseFloat(thisLocation[0]),
-            thisLng = parseFloat(thisLocation[1]);
-          var thisHtml = "<a href ={{ site.baseurl }}{{ post.url }}><span style='display: block;color:#99CDC9'> <b>{{ site.data.authors[post.author].name }}</b><br>{{ post.title | encode}}</span></a>";
-          L.marker([thisLat, thisLng],{icon: icon}).bindPopup(thisHtml).addTo(locationsGroup);
 
-        }
+    var fieldprojects = L.featureGroup();
+	
+
+    var overlays = {
+      "Stories": locationsGroup,
+      "Field Projects": fieldprojects
+    };
+
+
+    L.control.layers(overlays).addTo(map);
+
+
+    var colorIndexArray = new Array();
+
+    {% assign outer_loop_index = 0 %}
+
+    var exitFlag = 'no';
+
+//This loop just assigns each post author an index number
+    {% for post in site.posts %}
+            {% for author in site.data.authors %}
+                //console.log('{{ author }}');
+                {% if author[0] == post.author %}
+                  //console.log('{{ author[0] }}');
+
+                  exitFlag = 'no';
+
+                  //console.log('exitFlag: ');
+                  //console.log('{{ exitFlag }}');
+
+                  if ('{{ author[0] }}' in colorIndexArray){
+                    //console.log('org already exists!');
+                    exitFlag = 'yes';
+                  }
+
+                  {% assign index = outer_loop_index %}
+
+                  {% assign currentAuthor = author[0] %}
+                  if (exitFlag = 'no') {
+                    colorIndexArray['{{ currentAuthor }}'] = {{ index }};
+                  }
+
+                  {% capture outer_loop_index %}{{ outer_loop_index | plus:1 }}{% endcapture %}
+                  //console.log('index: ');
+                  //console.log('{{ index }}');
+                {% endif %}
+            {% endfor %}
     {% endfor %}
 
+//console.log('printing colorIndexArray: ');
+//console.log(colorIndexArray);
+
+//This loop takes the authors' index numbers and assigns a color and creates a marker
+    {% for post in site.posts %}
+        if(("{{ post.coord }}").split(",").length === 2){
+                    //console.log('testing colorIndexArray :');
+                    //console.log(colorIndexArray['{{ post.author }}']);
+                    //var color = colorbrewer.Paired[12][{{index}} % 11];
+                    var color = colorbrewer.Paired[12][colorIndexArray['{{ post.author }}'] % 11];
+                    //console.log(color);
+                    //put the author's color in the colorArray
+                    //console.log('currentAuthor: ');
+                    //console.log('{{ currentAuthor }}');
+                    
+                    var icon = L.MakiMarkers.icon({color: color });
+                    // remove spaces and split the string on the comma into an array
+                    var thisLocation = ("{{ post.coord }}").replace(/\s/g, '').split(",");
+                    var thisLat = parseFloat(thisLocation[0]),
+                      thisLng = parseFloat(thisLocation[1]);
+                    var thisHtml = "<a href ={{ site.baseurl }}{{ post.url }}><span style='display: block;color:#99CDC9'> <b>{{ site.data.authors[post.author].name }}</b><br>{{ post.title | encode}}</span></a>";
+                    L.marker([thisLat, thisLng],{icon: icon}).bindPopup(thisHtml).addTo(locationsGroup);
+                }
+    {% endfor %}
+
+
+var fieldColorArray = {"American Red Cross":"#e41a1c", "MapGive":"#4daf4a", "GFDRR":"#984ea3", "Peace Corps":"#ff7f00", "USAID":"#377eb8"};
+
+    //This code block get's the field project points from the Google spreadsheet
+
+    //http://stackoverflow.com/questions/24531351/retrieve-google-spreadsheet-worksheet-json
+    $(document).ready(function() {
+        $.getJSON("https://spreadsheets.google.com/feeds/list/1Mj_E9YKMGKiONUl3nkpmeV4yCELFxrtaEO2Bav_THe4/1/public/basic?gid=1&hl=en_US&alt=json", function(data) {
+                var markers_array = data.feed.entry;
+                console.log('array length');
+                console.log(markers_array.length);
+                console.log(markers_array);
+                //var markers = new L.MarkerClusterGroup();
+                for (var i = 0; i < markers_array.length; i++) {
+                        var popup = L.popup();
+                        if (markers_array[i].content){
+
+                            //console.log(markers_array[i].title.$t)
+                            //console.log(markers_array[i].content.$t)
+                            //the content is in a string as a list, so you need to split it and save it as an array
+                            var contentStr = markers_array[i].content.$t
+                            var contentArray = contentStr.split(",");
+
+                            //console.log(contentArray);
+
+                            var org = markers_array[i].title.$t
+                            //console.log('org: ');
+                            //console.log(org);
+
+                            if (contentArray[0].slice(0, contentArray[0].indexOf(":")).indexOf('locationnamenocommasallowed') > -1){
+                                //console.log('ok');
+                                var location = contentArray[0].slice(contentArray[0].indexOf(":")+2);
+                                //console.log(location);
+                            }
+                            //console.log(contentArray[4].slice(0, contentArray[4].indexOf(":")))
+                            //this line checks of the element exists, indexOf will return a -1 if the list does not contain the element
+                            if (contentArray[1].slice(0, contentArray[1].indexOf(":")).indexOf('locationcountry') > -1){
+                                //you need to add plus 2 to the index so you don't capture the colon and the space in the value
+                                //console.log('ok2');
+                                var country = contentArray[1].slice(contentArray[1].indexOf(":")+2);
+                                //console.log('country: ');
+                                //console.log(country);
+                            }
+                            if (typeof contentArray[2] !== 'undefined') {
+                                if (contentArray[2].slice(0, contentArray[2].indexOf(":")).indexOf('lat') > -1){
+                                    var lat = Number(contentArray[2].slice(contentArray[2].indexOf(":")+1));
+                                    //console.log('lat: ');
+                                    //console.log(lat);
+                                }
+                            }
+                            if (typeof contentArray[3] !== 'undefined') {
+                                if (contentArray[3].slice(0, contentArray[3].indexOf(":")).indexOf('lon') > -1){
+                                    var lon = Number(contentArray[3].slice(contentArray[3].indexOf(":")+1));
+                                }
+                            }
+                           
+                        }
+                        //console.log(lat);
+                        if (typeof lat !== 'undefined') {
+                            //var marker = L.marker(new L.LatLng(lat, lon), {
+                            //    icon: L.mapbox.marker.icon({'marker-symbol': 'hospital', 'marker-color': '0044FF'})
+                            //});
+                            //console.log('popupText')
+                            //console.log(popupText)
+                            //marker.bindPopup(healthDistrict + '<br>' + 'site name: ' + siteName + '<br>' + 'uid: ' + uid);
+                            //markers.addLayer(marker);
+
+/*
+                            if (org in fieldColorArray){
+                              console.log('org in fieldColorArray!');
+                              console.log(fieldColorArray[org]);
+                            }
+*/
+                            for (key in fieldColorArray) {
+                              if (org.indexOf(key) > -1) {
+                                //console.log('found correct org: ');
+                                //console.log(key);
+                                var orgColor = fieldColorArray[key];
+                              }
+                            }
+
+                            L.marker([lat, lon],{icon: L.MakiMarkers.icon({color: orgColor })}).bindPopup(org + '<br>' + location + ', ' + country).addTo(fieldprojects);
+                        }
+                }
+                
+                //map.addLayer(markers);
+         });
+    });
+
+
+
     map.fitBounds(locationsGroup.getBounds(), {padding: [100, 100]});
+
+    //http://stackoverflow.com/questions/25051680/how-to-switch-between-multiple-map-legends-with-leaflet-js
+    map.on('baselayerchange', onOverlayAdd);
+
+      function onOverlayAdd(eventLayer){
+
+          //console.log(eventLayer.name);
+
+          if (eventLayer.name == 'Field Projects') { 
+            //console.log('layer switched!');
+            map.fitBounds(fieldprojects.getBounds(), {padding: [50, 50]});
+          }
+
+          if (eventLayer.name == 'Stories') { 
+            //console.log('layer switched to Stories!');
+            map.fitBounds(locationsGroup.getBounds(), {padding: [100, 100]});
+          }
+          
+      }
 
     $(window).resize(function(){
       var mapHeight = $(window).height() - $(".navigation-wrapper").outerHeight() - $(".masthead").outerHeight();

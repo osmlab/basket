@@ -10,4 +10,4 @@ image:
   creditlink:
 ---
 
-<div id="map" style="margin: 0 auto 12px auto; max-height:600px; max-width:1200px;"></div>
+<div id="map" style="margin: 0 auto 12px auto; max-height:600px; max-width:1000px;"></div>
